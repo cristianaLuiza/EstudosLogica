@@ -1,0 +1,1 @@
+Repositorio que vai conter todos exercicios de lógica da [lista](http://www.decom.ufop.br/menotti/aedI/listasIP/listaIP03b-repeticao.pdf) da Universidade Federal de Ouro Preto – UFOP 
