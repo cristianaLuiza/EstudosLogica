@@ -28,6 +28,6 @@ public class Setenta {
         System.out.print("Seu maior numero digitado foi "+maiornumero+" e seu menor numero foi "+menornumero);
     }
 }
-//Construa um algoritmo em PORTUGOL para encontrar o maior e o menor número de
+//Construa um algoritmo para encontrar o maior e o menor número de
 //uma série de números positivos fornecidos pelo usuário através do teclado.
 //Novamente, o dado finalizador é o número –1, e este não deve ser considerado.

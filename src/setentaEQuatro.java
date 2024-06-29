@@ -19,7 +19,7 @@ public class setentaEQuatro {
 }
 //Dois ciclistas A e B estão andando em uma pista de ciclismo com 2 Km de
 //comprimento com velocidades de 10 m/s e 15 m/s, respectivamente. Escreva um
-//algoritmo em PORTUGOL que determine iterativamente o tempo que levará para que
+//algoritm que determine iterativamente o tempo que levará para que
 //esses dois ciclistas A e B se encontrem em um mesmo ponto, sabendo que eles
 //partiram de um mesmo ponto inicial, porém em sentido contrário. O algoritmo
 //também deve calcular o deslocamento (a distância) que cada um percorreu.

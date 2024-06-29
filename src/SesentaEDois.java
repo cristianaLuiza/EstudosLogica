@@ -13,8 +13,7 @@ public class SesentaEDois {
 
         }
         System.out.println("Você digitou " + conta_numero +" numeros");
-
-
-
     }
 }
+//) Escreva um algoritmo em que receba números do usuário enquanto eles
+//forem positivos e ao fim o algoritmo deve imprimir quantos números foram digitados.

@@ -29,6 +29,6 @@ public class SetentaESete {
         System.out.print("\nA média dos numero é de "+media);
     }
 }
-//Criar um algoritmo em PORTUGOL que leia vários números e encerre a leitura com 0
+//Criar um algoritmo que leia vários números e encerre a leitura com 0
 //e imprima o maior, o menor e a média aritmética dos números. O número 0 (zero) não
 //faz parte da seqüência.

@@ -16,18 +16,15 @@ public class SessentaENove {
             }
 
         }
-
         for (i = 0; i < 8; i++) {
             if (vetor[i] > 5 && vetor[i] < 15 && vetor[i] < menornumero) {
                 menornumero = vetor[i];
             }
         }
         System.out.print("O menor valor do conjunto digitado é o numero: " + menornumero);
-
-
     }
 }
-//Construa um algoritmo em PORTUGOL para que: Dado um conjunto de valores
+//Construa um algoritmo para que: Dado um conjunto de valores
 //inteiros e positivos, digitados pelo usuário através do teclado, determinar qual o menor
 //valor do conjunto. O algoritmo deve imprimir o valor determinado. Quando o usuário
 //decidir que finalizou a entrada de dados, ele deve digitar –1, e este dado não deve ser

@@ -15,7 +15,7 @@ public class SessentaETres {
 
         media = soma/conta_numero;
         System.out.println("Você digitou " + conta_numero +" numeros e sua média foi de " + media);
-
-
     }
 }
+// Escreva um algoritmo que receba números do usuário enquanto eles
+//forem positivos e ao fim o algoritmo deve imprimir a média dos números digitados.
