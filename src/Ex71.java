@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class SetentaEUm {
+public class Ex71 {
     public static void main(String[] args) {
         double taxaa = 0.50, taxab = 0.01;
         double paisA = 5000000, paisB = 7000000;

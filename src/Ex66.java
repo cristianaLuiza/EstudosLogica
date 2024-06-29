@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SessentaESeis {
+public class Ex66 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int vetor[] = new int[10];

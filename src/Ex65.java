@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SessentaECinco {
+public class Ex65 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int i, quadrado = 0;

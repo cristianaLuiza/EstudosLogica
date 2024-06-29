@@ -1,4 +1,4 @@
-public class SetentaECinco {
+public class Ex75 {
     public static void main(String[] args) {
         double sp = 0, cu = 800000;
         int tempo = 0, tempo_horas = 0;

@@ -1,4 +1,4 @@
-public class setentaEQuatro {
+public class Ex74 {
     public static void main(String[] args) {
         int tempo = 0;
         double ciclista_a = 0, ciclista_b = 2000,totalb=0;

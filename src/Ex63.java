@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SessentaETres {
+public class Ex63 {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         int numeros=0, i, soma=0, conta_numero=0;

@@ -1,4 +1,4 @@
-public class SetentaEDois {
+public class Ex72 {
     public static void main(String[] args) {
         double altura_chico = 1.50, altura_juca = 1.10;
         double chico_taxa = 0.02, juca_taxa = 0.03;

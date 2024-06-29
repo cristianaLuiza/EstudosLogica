@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SetentaENove {
+public class Ex79 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int i, alunos_turma;

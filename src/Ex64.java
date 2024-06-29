@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SessentaEQuatro {
+public class Ex64 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         int i, n = 0, contador = 0;

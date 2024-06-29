@@ -1,4 +1,4 @@
-public class SetentaETres {
+public class Ex73 {
     public static void main(String[] args) {
         double segundos = 30, perda_massa = 0.25, fimmassa = 0.10, iniciomassa = 1000;
         int tempo = 0;
