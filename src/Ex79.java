@@ -18,7 +18,6 @@ public class Ex79 {
         for (i = 0; i < alunos_turma; i++) {
             System.out.print("\nDigite o nome ");
             vetor_nome[i] = leia.next();
-
             System.out.print("\n Nota 1 matematica:  ");
             matematica[i] = leia.nextInt();
             System.out.print("\n Nota 2 fisica:  ");
