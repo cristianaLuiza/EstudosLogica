@@ -8,14 +8,14 @@ public class Ex65 {
         int i, quadrado = 0;
         int vetor[] = new int[3];
 
-        for (i = 0; i < 3; i++) {
+        for (i = 0; i < 3; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             System.out.print("Digite seu numero:");
             vetor[i] = leia.nextInt();
             if (vetor[i] % 6 == 0) {
-                return;
+                return; //TODO: DEVERIA SER UM BREAK OU UM RETURN?
             }
             quadrado = vetor[i] * vetor[i];
-            System.out.print("Seu numero ao quadrado é: " + quadrado + " \n");
+            System.out.print("Seu numero ao quadrado é: " + quadrado + " \n"); //TODO: ESTÁ IMPRIMINDO O QUADRADO DO NÚMERO MULTIPLO DE 6?
 
         }
     }

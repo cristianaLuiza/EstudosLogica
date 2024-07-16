@@ -8,10 +8,10 @@ public class Ex62 {
         int numeros, i, conta_numero=0;
 
 
-        for (i=0; i<3;i++) {
+        for (i=0; i<3;i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             System.out.print("Digite seu numero: \n");
             numeros = scanner.nextInt();
-            if(numeros >= 0 ) { conta_numero++;}
+            if(numeros >= 0 ) { conta_numero++; }
 
         }
         System.out.println("Você digitou " + conta_numero +" numeros");

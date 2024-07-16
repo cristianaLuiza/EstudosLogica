@@ -7,14 +7,14 @@ public class Ex64 {
         Scanner leia = new Scanner(System.in);
         int i, n = 0, contador = 0;
 
-        for (i = 0; i < 3; i++) {
+        for (i = 0; i < 3; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             System.out.print("Digite seu numero: ");
             n = leia.nextInt();
             if (n > 100 && n < 200) {
                 contador = contador + 1;
             }
             if (n == 0) {
-                return;
+                return; //TODO: DEVERIA SER UM RETURN OU UM BREAK?
             }
         }
         System.out.print(" Vc digitou " + contador + " numeros");

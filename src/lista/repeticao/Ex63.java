@@ -8,14 +8,14 @@ public class Ex63 {
         int numeros=0, i, soma=0, conta_numero=0;
         float  media;
 
-        for( i = 0;i < 3;i++){
+        for( i = 0;i < 3;i++){ //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             System.out.print("Digite seu numero:");
             numeros = scanner.nextInt();
             if (numeros >=0 ){conta_numero++;
-                soma = numeros + soma;}
+                soma = numeros + soma;} //TODO: Formatar o código
         }
 
-        media = soma/conta_numero;
+        media = soma/conta_numero; //TODO: corrigir possível divisão por zero
         System.out.println("Você digitou " + conta_numero +" numeros e sua média foi de " + media);
     }
 }

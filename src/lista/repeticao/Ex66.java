@@ -10,14 +10,14 @@ public class Ex66 {
         int maior_numero = 0, menor_numero = 1000;
         float mediapar, mediaimpar;
 
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 10; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             System.out.print("Digite seus numeros para média: ");
             vetor[i] = leia.nextInt();
             if (vetor[i] < 0) {
-                return;
+                return; //TODO: DEVERIA SER UM RETURN OU BREAK?
             }
         }
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 10; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
             if (vetor[i] % 2 == 0) {
                 numeros_par++;
                 somapar = vetor[i] + somapar;
@@ -29,7 +29,7 @@ public class Ex66 {
         mediapar = somapar / numeros_par;
         mediaimpar = somaimpar / numero_impar;
 
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 10; i++) {//TODO: EXISTE UMA FORMA DE OTIMIZAR A QUANTIDADE DE FOR? PRECISO REALMENTE DE UM VETOR?
             if (vetor[i] > maior_numero && vetor[i] % 2 == 0) {
                 maior_numero = vetor[i];
             } else if (vetor[i] < menor_numero && vetor[i] % 2 == 1) {
