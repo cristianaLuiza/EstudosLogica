@@ -5,37 +5,36 @@ import java.util.Scanner;
 public class Ex66 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int vetor[] = new int[10];
-        int i, somapar = 0, somaimpar = 0, numeros_par = 0, numero_impar = 0;
+        int numero, somapar = 0, somaimpar = 0, numeros_par = 0, numero_impar = 0;
         int maior_numero = 0, menor_numero = 1000;
         float mediapar, mediaimpar;
 
-        for (i = 0; i < 10; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
-            System.out.print("Digite seus numeros para média: ");
-            vetor[i] = leia.nextInt();
-            if (vetor[i] < 0) {
-                return; //TODO: DEVERIA SER UM RETURN OU BREAK?
+        System.out.print("Digite seus numeros para média: ");
+        numero = leia.nextInt();
+        do {
+            if (numero <= 0) {
+                break;
             }
-        }
-        for (i = 0; i < 10; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
-            if (vetor[i] % 2 == 0) {
+
+            if (numero % 2 == 0) {
                 numeros_par++;
-                somapar = vetor[i] + somapar;
+                somapar = numero + somapar;
             } else {
                 numero_impar++;
-                somaimpar = vetor[i] + somaimpar;
+                somaimpar = numero + somaimpar;
             }
+
+            if (numero > maior_numero && numero % 2 == 0) {
+                maior_numero = numero;
+            } else if (numero < menor_numero && numero % 2 == 1) {
+                menor_numero = numero;
+            }
+            System.out.print("Digite seus numeros para média: ");
+            numero = leia.nextInt();
         }
+        while (true);
         mediapar = somapar / numeros_par;
         mediaimpar = somaimpar / numero_impar;
-
-        for (i = 0; i < 10; i++) {//TODO: EXISTE UMA FORMA DE OTIMIZAR A QUANTIDADE DE FOR? PRECISO REALMENTE DE UM VETOR?
-            if (vetor[i] > maior_numero && vetor[i] % 2 == 0) {
-                maior_numero = vetor[i];
-            } else if (vetor[i] < menor_numero && vetor[i] % 2 == 1) {
-                menor_numero = vetor[i];
-            }
-        }
 
         System.out.print("A média impar será " + mediaimpar + " e a media par será " + mediapar + "\n");
         System.out.print("O maior numero Par será " + maior_numero + " o menor numero impar será " + menor_numero);

@@ -5,20 +5,23 @@ import java.util.Scanner;
 public class Ex67 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int vetor[] = new int[5];
-        int soma = 0, i;
+        int numeros = 0, soma = 0;
 
-        for (i = 0; i < 5; i++) {
-            System.out.print("Digite seus numero para soma: ");
-            vetor[i] = leia.nextInt();
-            if (vetor[i] == 0) {
-                return;
+        System.out.print("Digite seus numero para a soma: ");
+        numeros = leia.nextInt();
+
+        do {
+            if (numeros == -1) {
+                break;
             }
-        }
-        for (i = 0; i < 5; i++) {
-            soma = vetor[i] + soma;
-        }
-        System.out.print("A soma dos  seus numero é de: " + soma);
+            soma = numeros + soma;
+            System.out.print("Digite seus numero para a soma: ");
+            numeros = leia.nextInt();
+
+        } while (true);
+
+
+        System.out.print("Resultado soma: " + soma);
     }
 }
 //Construa um algoritmo para fazer a soma de vários valores inteiros e

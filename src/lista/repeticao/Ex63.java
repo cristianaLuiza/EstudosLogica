@@ -3,20 +3,31 @@ package lista.repeticao;
 import java.util.Scanner;
 
 public class Ex63 {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numeros=0, i, soma=0, conta_numero=0;
-        float  media;
+        int numeros_usuarios = 0;
+        double media, soma = 0, conta_numero = 0;
 
-        for( i = 0;i < 3;i++){ //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
+        System.out.print("Digite seu numero:");
+        numeros_usuarios = scanner.nextInt();
+
+        do {
+
+            if (numeros_usuarios <= 0) {
+                break;
+            }
+            if (numeros_usuarios > 0) {
+                conta_numero++;
+                soma = numeros_usuarios + soma;
+            }
+
             System.out.print("Digite seu numero:");
-            numeros = scanner.nextInt();
-            if (numeros >=0 ){conta_numero++;
-                soma = numeros + soma;} //TODO: Formatar o código
-        }
+            numeros_usuarios = scanner.nextInt();
+        } while (true);
 
-        media = soma/conta_numero; //TODO: corrigir possível divisão por zero
-        System.out.println("Você digitou " + conta_numero +" numeros e sua média foi de " + media);
+        media = soma / conta_numero;
+
+        System.out.println("Você digitou " + conta_numero + " numeros e sua média foi de " + media);
     }
 }
 // Escreva um algoritmo que receba números do usuário enquanto eles

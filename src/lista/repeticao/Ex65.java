@@ -5,19 +5,24 @@ import java.util.Scanner;
 public class Ex65 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int i, quadrado = 0;
-        int vetor[] = new int[3];
+        int  quadrado = 0, numeros = 0;
 
-        for (i = 0; i < 3; i++) { //TODO: DEVERÁ PARAR QUANDO RECEBER UM NÚMERO NEGATIVO
-            System.out.print("Digite seu numero:");
-            vetor[i] = leia.nextInt();
-            if (vetor[i] % 6 == 0) {
-                return; //TODO: DEVERIA SER UM BREAK OU UM RETURN?
+        System.out.print("Digite um numero:");
+        numeros = leia.nextInt();
+        do {
+            if ( quadrado%2==0) {
+                quadrado=numeros*numeros;
+                System.out.print("\nSeu numero ao quadrado é: " + quadrado );
             }
-            quadrado = vetor[i] * vetor[i];
-            System.out.print("Seu numero ao quadrado é: " + quadrado + " \n"); //TODO: ESTÁ IMPRIMINDO O QUADRADO DO NÚMERO MULTIPLO DE 6?
 
-        }
+            else if (numeros % 6 == 0) {
+                System.out.print("\n"+numeros+ " é um multiplo de 6");
+                break;
+            }
+            System.out.print("\nDigite um numero:");
+            numeros = leia.nextInt();
+        } while (true);
+
     }
 }
 // Escreva um algoritmo em que receba números e imprima o quadrado de
