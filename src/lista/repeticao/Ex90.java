@@ -11,16 +11,16 @@ public class Ex90 {
         for (i = 0; i < numeros; i++) {
             System.out.print("Digite seu numero para saber se ele é um quadrado perfeito: ");
             n[i] = leia.nextInt();
-            if(n[i]<=0){
+            if (n[i] <= 0) {
                 break;
             }
         }
         for (i = 0; i < n[i]; i++) {
             double variavel = Math.sqrt(n[i]);
-            if (variavel%1==0) {
-                System.out.print("\nSeu numero "+n[i]+ " é um quadrado perfeito");
-            } else{
-                System.out.print("\nSeu numero "+n[i]+ " não é  quadrado perfeito");
+            if (variavel % 1 == 0) {
+                System.out.print("\nSeu numero " + n[i] + " é um quadrado perfeito");
+            } else {
+                System.out.print("\nSeu numero " + n[i] + " não é  quadrado perfeito");
             }
         }
 
