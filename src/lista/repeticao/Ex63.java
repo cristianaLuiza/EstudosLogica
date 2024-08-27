@@ -8,22 +8,16 @@ public class Ex63 {
         int numeros_usuarios = 0;
         double media, soma = 0, conta_numero = 0;
 
-        System.out.print("Digite seu numero:");
-        numeros_usuarios = scanner.nextInt();
-
         do {
+            System.out.print("Digite seu numero:");
+            numeros_usuarios = scanner.nextInt();
 
-            if (numeros_usuarios <= 0) {
-                break;
-            }
             if (numeros_usuarios > 0) {
                 conta_numero++;
                 soma = numeros_usuarios + soma;
             }
 
-            System.out.print("Digite seu numero:");
-            numeros_usuarios = scanner.nextInt();
-        } while (true);
+        } while (numeros_usuarios !=0);
 
         media = soma / conta_numero;
 

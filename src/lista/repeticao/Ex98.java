@@ -20,7 +20,7 @@ public class Ex98 {
             if (saldo < 0) {
                 negativo++;
                 saldo_negativo=saldo+saldo_negativo;
-                System.out.print("Conta:" + conta + "\nSaldo:" + saldo_negativo);
+                System.out.print("Conta:" + conta + "\nSaldo:" + saldo);
                 System.out.print("\nNegativo\n");
             } else {
                 positivo++;
@@ -50,7 +50,7 @@ public class Ex98 {
 
 
 //Uma agência de uma cidade do interior tem, no máximo, 10000 clientes. Criar um
-//algoritmo em PORTUGOL que possa receber o número da conta, nome e saldo de
+//algoritmo que possa receber o número da conta, nome e saldo de
 //cada cliente. Esse algoritmo deve imprimir todas as contas, os respectivos saldos e
 //uma das mensagens: positivo/negativo. A digitação acaba quando se digita –999 para
 //um número da conta ou quando chegar a 10000. Ao final, deverá sair o total de

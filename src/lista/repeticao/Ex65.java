@@ -7,9 +7,11 @@ public class Ex65 {
         Scanner leia = new Scanner(System.in);
         int  quadrado = 0, numeros = 0;
 
-        System.out.print("Digite um numero:");
-        numeros = leia.nextInt();
+
         do {
+            System.out.print("\nDigite um numero:");
+            numeros = leia.nextInt();
+
             if ( quadrado%2==0) {
                 quadrado=numeros*numeros;
                 System.out.print("\nSeu numero ao quadrado é: " + quadrado );
@@ -19,8 +21,6 @@ public class Ex65 {
                 System.out.print("\n"+numeros+ " é um multiplo de 6");
                 break;
             }
-            System.out.print("\nDigite um numero:");
-            numeros = leia.nextInt();
         } while (true);
 
     }

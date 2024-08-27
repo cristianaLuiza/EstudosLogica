@@ -22,8 +22,6 @@ public class Ex99 {
 //        quantidade = leia.nextInt();
 
         do{
-            valor_compra=preco_unitario*quantidade;
-            valor_total=valor_compra+valor_total;
             System.out.print("Numero do pedido: ");
             numero_pedido = leia.nextInt();
             if(numero_pedido==0){
@@ -39,8 +37,10 @@ public class Ex99 {
             preco_unitario = leia.nextDouble();
             System.out.print("Quantidade: ");
             quantidade = leia.nextInt();
+            valor_compra=preco_unitario*quantidade;
+            valor_total=valor_compra+valor_total;
 
-        }while (true);
+        }while (numero_pedido>0);
 
         System.out.print("Valor de sua compra R$"+valor_total);
 

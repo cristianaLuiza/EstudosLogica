@@ -40,14 +40,12 @@ public class Ex96 {
             kwh = leia.nextDouble();
             System.out.print("Tipo de codigo do consumidor: ");
             consumidor = leia.nextInt();
+
+            media1 = total1 / consumidor1;
+            media2 = total2 / consumidor2;
+
         } while (true);
 
-        consumidor1 = kwh * 0.3;
-        consumidor2 = kwh * 0.5;
-        consumidor3 = kwh * 0.7;
-
-        media1 = total1 / consumidor1;
-        media2 = total2 / consumidor2;
 
         System.out.print("O custo total para o consumidor residencial R$" + consumidor1);
         System.out.print("\nO custo total para o consumidor comercial R$" + consumidor2);

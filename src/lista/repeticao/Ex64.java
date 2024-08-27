@@ -7,21 +7,17 @@ public class Ex64 {
         Scanner leia = new Scanner(System.in);
         int n = 0, contador = 0;
 
-        System.out.print("Digite seus numeros: ");
-        n = leia.nextInt();
-
         do {
+            System.out.print("Digite seus numeros: ");
+            n = leia.nextInt();
+
             if (n > 100 && n < 200) {
                 contador++;
             }
-            if (n == 0) {
-                break;
-            }
-            System.out.print("Digite seus numeros: ");
-            n = leia.nextInt();
-        } while (true);
 
-        System.out.print(" Vc digitou " + contador + " numeros");
+        } while (n != 0);
+
+        System.out.print("Vc digitou " + contador + " numeros");
 
     }
 }

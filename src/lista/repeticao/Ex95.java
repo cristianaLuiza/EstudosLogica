@@ -8,10 +8,11 @@ public class Ex95 {
         int voto1 = 0, voto2 = 0, voto3 = 0, voto4 = 0, voto5 = 0, voto6 = 0, voto = 0;
         double eleitores = 0, percentual = 0;
 
-        System.out.print("Digite seu voto: ");
-        voto = leia.nextInt();
 
-        while (voto != 0) {
+        do {
+            System.out.print("Digite seu voto: ");
+            voto = leia.nextInt();
+
             if (voto == 1) {
                 voto1++;
             }
@@ -32,9 +33,9 @@ public class Ex95 {
             }
             eleitores++;
             percentual = (voto6 + voto5) / eleitores;
-            System.out.print("Digite seu voto: ");
-            voto = leia.nextInt();
+
         }
+        while (voto!=0);
 
         System.out.print("Total de votos para o candidato 1 foi de " + voto1 + "\n" +
                 "Total de votos para o candidato 2 foi de " + voto2 + " " +

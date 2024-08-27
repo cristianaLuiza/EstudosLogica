@@ -11,14 +11,11 @@ public class Ex67 {
         numeros = leia.nextInt();
 
         do {
-            if (numeros == -1) {
-                break;
-            }
             soma = numeros + soma;
             System.out.print("Digite seus numero para a soma: ");
             numeros = leia.nextInt();
 
-        } while (true);
+        } while (numeros !=-1);
 
 
         System.out.print("Resultado soma: " + soma);
