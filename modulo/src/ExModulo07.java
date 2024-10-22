@@ -1,21 +1,17 @@
 public class ExModulo07 {
     public static void main(String[] args) {
-        int x = 10, y = 20;
-        boolean resultadofinal;
-        resultadofinal = divisao(x, y);
-      if(resultadofinal==true){
-          System.out.println("1 - X e Y  é divisivel um pelo outro");
-      }else {
-          System.out.println("zero - X e Y não é divisivél um pelo outro");
-      }
+        int x = 40, y = 20;
+
+       int resultadofinal = divisao(x, y);
+        System.out.println(resultadofinal);
     }
 
-    public static boolean divisao(int x, int y) {
-        boolean resultado = false;
+    public static int divisao(int x, int y) {
         if (x % y == 0) {
-            resultado = true;
+            return 1;
+        } else {
+            return 0;
         }
-        return resultado;
     }
 }
 //Escreva uma função que receba dois números inteiros x e y. Essa função deve verificar

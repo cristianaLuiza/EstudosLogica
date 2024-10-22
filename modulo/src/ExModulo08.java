@@ -1,22 +1,18 @@
 public class ExModulo08 {
     public static void main(String[] args) {
         int numero = 60;
-        boolean resultadoFinal;
-        resultadoFinal = decomposicao(numero);
-        if (resultadoFinal == true) {
-            System.out.println("1 numero fator primo");
-        } else {
-            System.out.println("0 numero não é fator primo");
-        }
+
+        int resultadoFinal = decomposicao(numero);
+        System.out.println(resultadoFinal);
 
     }
 
-    public static boolean decomposicao(int numero) {
-        boolean resultado = false;
-            if (numero % 2 == 0 & numero % 3 == 0 & numero % 5 == 0) {
-                resultado = true;
-            }
-        return resultado;
+    public static int decomposicao(int numero) {
+        if (numero % 2 == 0 & numero % 3 == 0 & numero % 5 == 0) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
 //Um número é dito ser regular caso sua decomposição em fatores primos apresenta

@@ -7,8 +7,13 @@ public class ExModulo04 {
         System.out.println("Numero: ");
         numero = leia.nextInt();
         romanos(numero);
-        String numeroRomano = romanos(numero);
-        System.out.println(numeroRomano);
+        if (numero % 2 == 0) {
+            String numeroRomano = romanos(numero);
+            System.out.println(numeroRomano);
+        }
+        if (numero > 50) {
+            System.out.println("erro");
+        }
     }
 
     public static String romanos(int numero) {

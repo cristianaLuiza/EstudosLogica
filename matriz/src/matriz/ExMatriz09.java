@@ -1,7 +1,5 @@
 package matriz;
 
-import aula2.Caneta;
-
 import java.util.Scanner;
 
 public class ExMatriz09 {

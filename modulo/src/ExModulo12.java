@@ -2,8 +2,8 @@ public class ExModulo12 {
     public static void main(String[] args) {
         int n = 4, p = 2, np = (n - p);
         int resultadoFinal = fatorialN(n) / fatorialNP(np);
-        System.out.println("Seu resultado foi: "+ resultadoFinal);
-        if(resultadoFinal%2!=0){
+        System.out.println("Seu resultado foi: " + resultadoFinal);
+        if (resultadoFinal % 2 != 0) {
             System.out.println("-1");
         }
     }

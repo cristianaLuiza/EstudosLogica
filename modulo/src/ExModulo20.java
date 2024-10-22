@@ -27,6 +27,9 @@ public class ExModulo20 {
     public static double deltas(double a, double b, double c) {
         double delta;
         delta = b * b - (4 * a * c);
+        if(delta==0){
+            return -1;
+        }
         return delta;
     }
 

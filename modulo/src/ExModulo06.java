@@ -1,9 +1,10 @@
 public class ExModulo06 {
     public static void main(String[] args) {
-        int numero = 5;
+        int numero = 4;
         boolean resultado;
         resultado = primo(numero); //PEGO O RETORNO DA FUNÇÃO
-        if(resultado==true){
+
+        if(resultado==true){ //RETORNANDO OS RESULTADOS BOLEANOS
             System.out.println("1");
         }else{
             System.out.println("zero");
@@ -14,6 +15,7 @@ public class ExModulo06 {
 
     public static boolean primo(int numero) {
         boolean ePrimo = true;
+
         for (int i = 2; i < numero; i++) {
             if (numero % i == 0) {
                 ePrimo = false;

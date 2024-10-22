@@ -4,12 +4,17 @@ public class ExModulo13 {
         double resultadoFinal=fatorialN(n)/(fatorialP(p)*fatorialNP(np));
         System.out.println("Seu fatorial: "+resultadoFinal);
 
+
     }
 
     public static double fatorialN(double n) {
         double resultadoN = 1;
         for (double i = n; i >= 1; i--) {
             resultadoN = i * resultadoN;
+            if(resultadoN==0){
+                System.out.println(-1);
+                break;
+            }
         }
         return  resultadoN;
     }

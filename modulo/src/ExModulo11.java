@@ -3,6 +3,9 @@ public class ExModulo11 {
         int numero = 5;  //
         int resultadofinal = fatorial(numero);
         System.out.println("Total fatorial: " + resultadofinal);
+        if(resultadofinal<=0 ){
+            System.out.println(-1);
+        }
     }
 
     public static int fatorial(int numero) {

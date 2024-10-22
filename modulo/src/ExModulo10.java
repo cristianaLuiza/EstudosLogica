@@ -9,7 +9,12 @@ public class ExModulo10 {
         numero = leia.nextInt();
 
         boolean resultado = verificaCapicua(numero);
-        System.out.println("É uma capicuia " + resultado);
+        if(!resultado){
+            System.out.println(0);
+        }else{
+            System.out.println(1);
+        }
+
     }
 
     public static boolean verificaCapicua(int numero) {
